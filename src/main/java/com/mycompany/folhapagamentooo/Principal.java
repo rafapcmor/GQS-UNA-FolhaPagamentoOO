@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.folhapagamento;
+package com.mycompany.folhapagamentooo;
 
 import java.util.Scanner;
 
@@ -28,7 +28,8 @@ public class Principal {
             switch (opcao) {
 
                 case 1: // folha de pagamento
-                    FolhaPagamento fp = new FolhaPagamento();
+                    FolhaPagamento fp = new FolhaPagamento(2, 300);
+                    fp.testaFolhaPagamento();
                     break;
 
                 case 2: // sair
@@ -46,6 +47,12 @@ public class Principal {
         System.out.println("[1] Folha de Pagamento");
         System.out.println("[2] Sair");
         System.out.println("-------------------");
+    }
+
+    public static void limparBuffer(Scanner scanner) {
+        if (scanner.hasNextLine()) {
+            scanner.nextLine();
+        }
     }
 
 }

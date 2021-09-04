@@ -3,38 +3,40 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.folhapagamento;
+package com.mycompany.folhapagamentooo;
 
 /**
  *
  * @author rafap
  */
 public class Funcionario {
-    
+
     // atributos
     private String nome;
     private int codigo;
     private float horasTrabalhadas, valorHora, salarioInicial, salarioFinal, auxilio;
     private Cargo cargo;
     private Turno turno;
-    
+
     // construtor
-    public Funcionario(String nome, float horasTrabalhadas, Cargo c, Turno t){
+    public Funcionario(String nome, float horasTrabalhadas, Cargo c, Turno t) {
         this.nome = nome;
         this.horasTrabalhadas = horasTrabalhadas;
         this.cargo = c;
         this.turno = t;
     }
+
     // getters e setters
-    public String getNome(){
-       return this.nome;
+    public String getNome() {
+        return this.nome;
     }
-    
-    public float getSalarioInicial(){
+
+    public float getSalarioInicial() {
         return this.salarioInicial;
     }
-    public void setSalarioInicial(float salario){
-       this.salarioInicial = salario;
+
+    public void setSalarioInicial(float salario) {
+        this.salarioInicial = salario;
     }
 
     public int getCodigo() {
@@ -83,11 +85,11 @@ public class Funcionario {
 
     @Override
     public String toString() {
-        return "Nome: " + nome + "\n"+ "Codigo: " + codigo + 
-                "HorasTrabalhadas: " + horasTrabalhadas + "\n"
-                + "ValorHora: " + valorHora + "\n" + "SalarioInicial: " + salarioInicial + "\n" + 
-                "SalarioFinal: " + salarioFinal +"\n" + "Auxilio: " + auxilio + "\n" + 
-                "Cargo: " + cargo + "\n" + "Turno: " + turno;
+        return "Nome: " + nome + "\n" + "Codigo: " + codigo + "\n"
+                + "Cargo: " + cargo + "\n" + "Turno: " + turno
+                + "HorasTrabalhadas: " + horasTrabalhadas + "\n"
+                + "ValorHora: " + valorHora + "\n" + "SalarioInicial: " + salarioInicial + "\n"
+                + "Auxilio: " + auxilio + "\n" + "SalarioFinal: " + salarioFinal + "\n";
     }
-   
+
 }
